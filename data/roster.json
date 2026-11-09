@@ -1,0 +1,151 @@
+{
+  "gameId": "G-20261114-FOXES-BEARS",
+  "teams": [
+    {
+      "teamId": "T-FOXES",
+      "name": "Harbor City Foxes",
+      "starters": [
+        "P-301",
+        "P-302",
+        "P-303",
+        "P-304",
+        "P-305"
+      ],
+      "players": [
+        {
+          "playerId": "P-301",
+          "number": 0,
+          "name": "Jordan Vance",
+          "position": "G"
+        },
+        {
+          "playerId": "P-302",
+          "number": 7,
+          "name": "Nate Castillo",
+          "position": "G"
+        },
+        {
+          "playerId": "P-303",
+          "number": 13,
+          "name": "Malik Dorsey",
+          "position": "F"
+        },
+        {
+          "playerId": "P-304",
+          "number": 25,
+          "name": "Ethan Moravec",
+          "position": "F"
+        },
+        {
+          "playerId": "P-305",
+          "number": 42,
+          "name": "Quinn Abernathy",
+          "position": "C"
+        },
+        {
+          "playerId": "P-306",
+          "number": 3,
+          "name": "Luca Bianchi",
+          "position": "G"
+        },
+        {
+          "playerId": "P-307",
+          "number": 9,
+          "name": "Trey Simmons",
+          "position": "G"
+        },
+        {
+          "playerId": "P-308",
+          "number": 17,
+          "name": "Aaron Kim",
+          "position": "F"
+        },
+        {
+          "playerId": "P-309",
+          "number": 31,
+          "name": "Colby Reyes",
+          "position": "F"
+        },
+        {
+          "playerId": "P-310",
+          "number": 52,
+          "name": "Hugo Lindgren",
+          "position": "C"
+        }
+      ]
+    },
+    {
+      "teamId": "T-BEARS",
+      "name": "Granite Falls Bears",
+      "starters": [
+        "P-401",
+        "P-402",
+        "P-403",
+        "P-404",
+        "P-405"
+      ],
+      "players": [
+        {
+          "playerId": "P-401",
+          "number": 1,
+          "name": "Xavier Bell",
+          "position": "G"
+        },
+        {
+          "playerId": "P-402",
+          "number": 6,
+          "name": "Cole Harrington",
+          "position": "G"
+        },
+        {
+          "playerId": "P-403",
+          "number": 22,
+          "name": "Rashad Greene",
+          "position": "F"
+        },
+        {
+          "playerId": "P-404",
+          "number": 33,
+          "name": "Tomas Novak",
+          "position": "F"
+        },
+        {
+          "playerId": "P-405",
+          "number": 45,
+          "name": "Dominic Ashby",
+          "position": "C"
+        },
+        {
+          "playerId": "P-406",
+          "number": 2,
+          "name": "Evan Pruitt",
+          "position": "G"
+        },
+        {
+          "playerId": "P-407",
+          "number": 11,
+          "name": "Isaac Morales",
+          "position": "G"
+        },
+        {
+          "playerId": "P-408",
+          "number": 19,
+          "name": "Levi Strand",
+          "position": "F"
+        },
+        {
+          "playerId": "P-409",
+          "number": 24,
+          "name": "Jamal Whitaker",
+          "position": "F"
+        },
+        {
+          "playerId": "P-410",
+          "number": 54,
+          "name": "Oscar Brandt",
+          "position": "C"
+        }
+      ]
+    }
+  ]
+}
