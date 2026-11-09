@@ -9,6 +9,16 @@ services:
     ports:
       - "3306:3306"
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1"]  # not localhost: its socket answers before MySQL is ready
       interval: 5s
       retries: 10
+
+  app:
+    build: .
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      DB_URL: jdbc:mysql://mysql:3306/boxscore?useAffectedRows=true
+    ports:
+      - "8080:8080"
