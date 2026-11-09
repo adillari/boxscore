@@ -1,5 +1,6 @@
 package com.adillari.boxscore
 
+import com.fasterxml.jackson.databind.ObjectMapper
 import spock.lang.Specification
 
 class BoxScoreCalculatorSpec extends Specification {
@@ -107,5 +108,21 @@ class BoxScoreCalculatorSpec extends Specification {
         then:
         r.lines['P-2'] == null
         r.warnings.size() == 1
+    }
+
+    def "the real feed produces the verified final score"() {
+        given:
+        def mapper = new ObjectMapper()
+        def events = new File('data/events.jsonl').readLines().collect { mapper.readValue(it, Event) }
+
+        when:
+        def r = calculator.calculate(events)
+        def points = { team -> r.lines.findAll { r.teamOf[it.key] == team }.values().sum { it.pts } }
+
+        then:
+        points('T-FOXES') == 67
+        points('T-BEARS') == 66
+        r.lines['P-388'].reb == 1
+        r.lines['P-401'].pts == 21
     }
 }
