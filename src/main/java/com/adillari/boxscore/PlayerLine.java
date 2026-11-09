@@ -18,8 +18,18 @@ public class PlayerLine {
     @JsonProperty("TO") public int to;
     @JsonProperty("PF") public int pf;
 
-    void add(PlayerLine o) {
-        pts += o.pts; fgm += o.fgm; fga += o.fga; threePm += o.threePm; threePa += o.threePa;
-        ftm += o.ftm; fta += o.fta; reb += o.reb; ast += o.ast; to += o.to; pf += o.pf;
+    /** Adds another line's numbers into this one. Team totals are built this way. */
+    void add(PlayerLine other) {
+        pts += other.pts;
+        fgm += other.fgm;
+        fga += other.fga;
+        threePm += other.threePm;
+        threePa += other.threePa;
+        ftm += other.ftm;
+        fta += other.fta;
+        reb += other.reb;
+        ast += other.ast;
+        to += other.to;
+        pf += other.pf;
     }
 }
